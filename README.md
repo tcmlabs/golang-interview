@@ -51,6 +51,11 @@ This file challenges your knowledge about the basics of Golang.
 ```bash
 $ go run basics.go
 ```
+## The interfaces
+This file challenges your knowledge about golang interfaces.
+```bash
+$ go run interfaces.go
+```
 ## The Go Routines
 This file challenges your knowledge about the Go Routines.
 ```bash
