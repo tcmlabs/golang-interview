@@ -83,6 +83,21 @@ func assertMonoid[T monoidElement](monoidObj monoid[T]) {
 	fmt.Println(": PASSED")
 }
 
+func composer[T monoidElement](f func(T) T, g func(T) T) func(T) T {
+	return func(t T) T {
+		return g(f(t))
+	}
+}
+
+func assertComposer[T monoidElement](g func(T) T, f func(T) T, x T) {
+	fmt.Printf("=> Monoid: composition function ")
+	if !reflect.DeepEqual(composer(f, g)(x), g(x)) {
+		fmt.Println(": FAILED")
+		os.Exit(1)
+	}
+	fmt.Println(": PASSED")
+}
+
 func main() {
 	assertMonoid(integerMonoidOne)
 	assertMonoid(integerMonoidTwo)
@@ -90,4 +105,10 @@ func main() {
 	assertMonoid(listMonoid)
 	assertMonoid(boolMonoidAnd)
 	assertMonoid(boolMonoidOr)
+
+	// Using the composition function
+	// g(f(x))
+	element := func(i int) int { return i * i }
+	neutral := nil
+	assertComposer(element, neutral, 10)
 }
