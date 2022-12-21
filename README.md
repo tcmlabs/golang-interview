@@ -51,7 +51,11 @@ This file challenges your knowledge about the basics of Golang.
 ```bash
 $ go run basics.go
 ```
-
+## The Go Routines
+This file challenges your knowledge about the Go Routines.
+```bash
+$ go run routines.go
+```
 ---
 # Contact
 [![Discord][discord-shield]][discord-url]
