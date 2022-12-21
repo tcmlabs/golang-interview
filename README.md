@@ -61,6 +61,11 @@ This file challenges your knowledge about the concurrency access on object.
 ```bash
 $ go run concurrency.go
 ```
+## Abstractions
+This file challenges your knowledge about abstrations.
+```bash
+$ go run math.go
+```
 
 ---
 # Contact
