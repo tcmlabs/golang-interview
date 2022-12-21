@@ -56,6 +56,12 @@ This file challenges your knowledge about the Go Routines.
 ```bash
 $ go run routines.go
 ```
+## Concurrency
+This file challenges your knowledge about the concurrency access on object.
+```bash
+$ go run concurrency.go
+```
+
 ---
 # Contact
 [![Discord][discord-shield]][discord-url]
