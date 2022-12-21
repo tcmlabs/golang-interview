@@ -19,6 +19,7 @@ This is the codebase used by engineers @TCMLABS to perform a technical interview
   Table of Contents
   <ol>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#exercises">Exercises</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#useful-links">Useful Links</a></li>
   </ol>
@@ -28,7 +29,7 @@ This is the codebase used by engineers @TCMLABS to perform a technical interview
 ## Prerequisites
  * Golang >= 1.18 installed on your machine 
 ```bash
-$> go version
+$ go version
 go version go1.18.5 darwin/arm64
 ```
  * Your favorite IDE
@@ -36,12 +37,19 @@ go version go1.18.5 darwin/arm64
 ## Getting Started
  * Clone the repository
 ```bash
-$> git clone https://github.com/tcmlabs/golang-interview.git 
+$ git clone https://github.com/tcmlabs/golang-interview.git 
 ```
  * Verify the project
 ```bash
-$> go run main.go                                                                                                                                                                                         1 ↵
+$ go run main.go                                                                                                                                                                                         1 ↵
 Welcome to the technical golang interview @TCMLABS 
+```
+
+# Exercises
+## The basics
+This file challenges your knowledge about the basics of Golang.
+```bash
+$ go run basics.go
 ```
 
 ---
